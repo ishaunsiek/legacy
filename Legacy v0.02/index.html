@@ -6,7 +6,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
@@ -16,35 +16,60 @@
     <link rel="stylesheet" href="css/font-awesome.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+    <!--<script src="node_modules/angular/angular.min.js"></script>-->
+    <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+    <script src="node_modules/angular-material/angular-material.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="node_modules/angular-resource/angular-resource.min.js"></script>
     <script src="lifely.js"></script>
 </head>
 
 
-<body ng-app="lifely">
+<body id="bod" ng-app="lifely" ng-model="bodbg">
 
-<!-- Add your site or application content here -->
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">Legacy</a>
-        </div>
-    </div>
-</nav>
+<!--&lt;!&ndash; Add your site or application content here &ndash;&gt;-->
+<!--<nav class="navbar navbar-inverse">-->
+    <!--<div class="container-fluid">-->
+        <!--<div class="navbar-header">-->
+            <!--<a class="navbar-brand" href="#">Legacy</a>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</nav>-->
 
 <div ng-controller="LifelyCtrl" class="container-fluid text-center">
-    {{period}}
-    <form class="form-vertical">
-        <input type="number" ng-model="formDate">
-        <button class="btn" ng-click="submitDate()">Go!</button>
+    <!--{{period}}-->
+    <div><img src="img/lifely-logo-horizontal.png"></div>
+    <span><h5 style="color:white; font-weight:100; font-family:'Roboto', sans-serif; margin-bottom:25px">Your life in a chart.</h5></span>
+    <!--<div id="inputform" ng-controller="LifelyCtrl" class="md-inline-form">-->
+        <!--<md-content md-theme="docs-dark" layout-gt-sm="row">-->
+            <!--<div>-->
+                <!--<md-input-container >-->
+                    <!--<label>Age:</label>-->
+                    <!--<input ng-model="formDate">-->
+                <!--</md-input-container>-->
+            <!--</div>-->
+        <!--</md-content>-->
+        <!--<button class="btn" ng-click="submitDate()">Contemplate Life</button>-->
+    <!--</div>-->
+    <form ng-submit="submitDate()" class="form-vertical">
+        <span>
+            <!--<label style="color:white; font-weight:normal; font-family:'Roboto', sans-serif">How old are you?</label>-->
+            <input class="inputbox" placeholder="Enter your age" type="number" ng-model="formDate" >
+            <button class="inputbtn" ng-click="submitDate()">Contemplate Life</button>
+        </span>
+
     </form>
-    <h2>{{date}}</h2>
+    <!--<h2>{{date}}</h2>-->
     <div>
-        <span><h3>Your life in</h3></span>
-        <button class="btn" ng-click="changePeriod(1)">years</button>
-        <button class="btn" ng-click="changePeriod(12)">months</button>
+        <span><h3 style="color:white; font-weight:100; font-family:'Roboto', sans-serif">{{textabovegrid}}</h3></span>
+        <!--<button class="btn" ng-click="changePeriod(1)">years</button>-->
+        <!--<button class="btn" ng-click="changePeriod(12)">months</button>-->
     </div>
 
-    <div class="center">
+    <div class="center" style="margin-top:30px; margin-right:1.5%">
         <table id="lifeGrid" align="center">
             <tr ng-repeat="r in rowArray">
                 <td ng-repeat="c in colArray">
@@ -53,29 +78,9 @@
             </tr>
         </table>
     </div>
-    <div class="row content" ng-model="period">
-        <div class="col-sm-2 sidenav">
-        </div>
-        <div class="col-sm-8 text-left">
-            <h1>Your life in:
-                <b>years <i class="fa fa-chevron-down" aria-hidden="true"></i></b>
-            </h1>
-            <hr>
-            <ul>
-                <li>25 more Thanksgivings with your family</li>
-                <li>Insight 2</li>
-                <li>Insight 3</li>
-            </ul>
 
-            <br>
+    <div class="factbox">
 
-            <i class="fa fa-refresh" aria-hidden="true"></i>
-            <img src="/img/vis-placeholder.png">
-        </div>
-
-
-        <div class="col-sm-2 sidenav">
-        </div>
     </div>
 </div>
 
@@ -83,7 +88,6 @@
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
 
 
 </body>

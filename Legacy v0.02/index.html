@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <!--<link rel="stylesheet" href="css/font-awesome.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
@@ -41,8 +42,8 @@
 
 <div ng-controller="LifelyCtrl" class="container-fluid text-center">
     <!--{{period}}-->
-    <div><img src="img/lifely-logo-horizontal.png"></div>
-    <span><h5 style="color:white; font-weight:100; font-family:'Roboto', sans-serif; margin-bottom:25px">Your life in a chart.</h5></span>
+    <div><img src="img/lifely-logo-horizontal.png" style="margin-top:20px"></div>
+    <span><h4 style="color:white; font-weight:100; font-family:'Roboto', sans-serif; margin-bottom:25px">{{slogan}}</h4></span>
     <!--<div id="inputform" ng-controller="LifelyCtrl" class="md-inline-form">-->
         <!--<md-content md-theme="docs-dark" layout-gt-sm="row">-->
             <!--<div>-->
@@ -68,8 +69,8 @@
         <!--<button class="btn" ng-click="changePeriod(1)">years</button>-->
         <!--<button class="btn" ng-click="changePeriod(12)">months</button>-->
     </div>
-
-    <div class="center" style="margin-top:30px; margin-right:1.5%">
+    <img src="img/Birth.png" style="position:absolute; right: 57.75%">
+    <div class="center" style="margin-top:23px; margin-right:1.5%">
         <table id="lifeGrid" align="center">
             <tr ng-repeat="r in rowArray">
                 <td ng-repeat="c in colArray">
@@ -77,10 +78,27 @@
                 </td>
             </tr>
         </table>
+
+    </div>
+    <img src="img/Ninety.png" style="padding-bottom:25px; position:absolute; right: 38.55%">
+    <div style="margin-top: 1.5%">
+
+        <button class="screenbtn" ng-click="changeScreen(0)">Your life</button>
+        <button class="screenbtn" ng-click="changeScreen(1)">Life of a Typical American</button>
+        <button class="screenbtn" ng-click="changeScreen(2)">Average age of...</button>
     </div>
 
-    <div class="factbox">
+    <div id="factbox" class="factbox" ng-model="fact" ng-hide="ageEntered === 0">
+        <h1 style="color:white"><i class="fa fa-user" aria-hidden="true"></i></h1>
+        <div style="font-weight:200; font-size: 90%; margin-bottom:20px">{{occurred}}</div>
+        <h1 style="color:white"><i class="fa fa-history" aria-hidden="true"></i></h1>
+        <div style="font-weight:200; font-size: 90%">{{fact}}</div>
+        <h1 style="color:white"><i class="fa fa-dollar" aria-hidden="true"></i></h1>
+        <div style="font-weight:200; font-size: 90%; margin-top:20px">{{compounded}}</div>
+    </div>
 
+    <div id="legend" class="legend" ng-model="legend">
+        <img id="legendpic" src="">
     </div>
 </div>
 

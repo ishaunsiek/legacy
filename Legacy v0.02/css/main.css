@@ -12,7 +12,7 @@
 .diamond{
     border:1px solid transparent;
     background-color: white;
-    opacity: 0.6;
+    opacity: 0.4;
     width:25px;
     height:25px;
     margin:20% 50%;
@@ -29,13 +29,25 @@
     font-family:'Roboto', sans-serif;
     width:140px;
     text-align:center;
-    padding:10px 15px;
+    padding:11px 15px;
 }
 .inputbtn{
     padding:10px 15px;
     background-color:gold;
     border-color:transparent;
+    font-size:110%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-weight:bold;
+    font-family:'Roboto', sans-serif;
+}
 
+.screenbtn{
+    padding:7px 15px;
+    background-color:gold;
+    color: black;
+    border-color:transparent;
+    font-size:90%;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2), 0 2px 10px 0 rgba(0,0,0,0.19);
     font-weight:bold;
     font-family:'Roboto', sans-serif;
 }
@@ -45,11 +57,26 @@ max-width:375px;
 }
 
 .factbox{
+    color:white;
+    font-size:150%;
+    font-style:italic;
+    font-weight:100;
+    font-family:'Roboto', sans-serif;
+    position: fixed;
+        bottom: 15%;
+        right: 73%;
+        width: 20%;
+}
 
+.legend{
+    position: fixed;
+        bottom: -8%;
+        right: 10%;
+        width: 20%;
 }
 
 body{
-    background: url("../img/bg-with-legend.png") no-repeat center center fixed;
+    background: url("../img/bg-FINAL.png") no-repeat center center fixed;
     background-attachment:fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;

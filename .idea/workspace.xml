@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bd4a96f-2236-4ffd-be20-fd3c172e2e1d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Legacy v0.02/index.html" afterPath="$PROJECT_DIR$/Legacy v0.02/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Legacy v0.02/img/Bg-FINAL.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Legacy%20v0.02/img/Bg-FINAL.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Legacy v0.02/css/main.css" afterPath="$PROJECT_DIR$/Legacy v0.02/css/main.css" />
     </list>
     <ignored path="legacy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Legacy v0.02/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
+            <state relative-caret-position="-258">
               <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -46,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Legacy v0.02/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="265" column="19" selection-start-line="265" selection-start-column="19" selection-end-line="265" selection-end-column="19" />
+            <state relative-caret-position="346">
+              <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -80,9 +83,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Legacy v0.02/js/lifely.js" />
-        <option value="$PROJECT_DIR$/Legacy v0.02/css/main.css" />
         <option value="$PROJECT_DIR$/Legacy v0.02/lifely.js" />
         <option value="$PROJECT_DIR$/Legacy v0.02/index.html" />
+        <option value="$PROJECT_DIR$/Legacy v0.02/css/main.css" />
       </list>
     </option>
   </component>
@@ -258,9 +261,9 @@
       <recent name="D:\Projects\legacy\Legacy v0.02\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\legacy\Legacy v0.02\img" />
       <recent name="D:\Projects\legacy\Legacy v0.02\fonts" />
       <recent name="D:\Projects\legacy\Legacy v0.02" />
-      <recent name="D:\Projects\legacy\Legacy v0.02\img" />
       <recent name="D:\Projects\legacy\Legacy v0.02\lifelylogo" />
       <recent name="D:\Projects\legacy\Legacy v0.02\js" />
     </key>
@@ -621,17 +624,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Legacy v0.02/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="265" column="19" selection-start-line="265" selection-start-column="19" selection-end-line="265" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Legacy v0.02/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
+        <state relative-caret-position="-258">
           <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -648,6 +643,14 @@
             <element signature="n#style#0;n#h1#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Legacy v0.02/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
